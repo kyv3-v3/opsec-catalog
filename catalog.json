@@ -1,0 +1,840 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-02-27T02:32:51.284Z",
+  "lastSyncedFromSourceAt": "2026-02-27T02:32:51.284Z",
+  "sourceUrl": "https://opsecguide.vip",
+  "sourceLanguage": "en",
+  "extractor": "playwright",
+  "categories": [
+    {
+      "id": "browsers",
+      "titleExact": "Browsers",
+      "descriptionExact": "Secure and privacy-focused web browsers to protect your online activity from tracking and surveillance.",
+      "path": "/browser",
+      "sortOrder": 0
+    },
+    {
+      "id": "search-engines",
+      "titleExact": "Search Engines",
+      "descriptionExact": "Privacy-respecting search engines that don't track your queries or build profiles about you.",
+      "path": "/search",
+      "sortOrder": 1
+    },
+    {
+      "id": "messaging-apps",
+      "titleExact": "Messaging Apps",
+      "descriptionExact": "Secure and private messaging applications for encrypted communication. Choose wisely based on your threat model.",
+      "path": "/messaging",
+      "sortOrder": 2
+    },
+    {
+      "id": "vpn-services",
+      "titleExact": "VPN Services",
+      "descriptionExact": "Virtual Private Networks that encrypt your internet connection and protect your online privacy from ISPs and surveillance.",
+      "path": "/vpn",
+      "sortOrder": 3
+    },
+    {
+      "id": "email-services",
+      "titleExact": "Email Services",
+      "descriptionExact": "Private and encrypted email providers that protect your communications from surveillance and data mining.",
+      "path": "/mail",
+      "sortOrder": 4
+    },
+    {
+      "id": "password-managers-2fa",
+      "titleExact": "Password Managers & 2FA",
+      "descriptionExact": "Secure password storage and two-factor authentication tools to protect your accounts from unauthorized access.",
+      "path": "/password",
+      "sortOrder": 5
+    },
+    {
+      "id": "disk-encryption",
+      "titleExact": "Disk Encryption",
+      "descriptionExact": "Full disk and file encryption solutions to protect your data from physical theft and unauthorized access.",
+      "path": "/encryption",
+      "sortOrder": 7
+    },
+    {
+      "id": "operating-systems",
+      "titleExact": "Operating Systems",
+      "descriptionExact": "Privacy-focused and security-hardened operating systems that protect against surveillance and data collection.",
+      "path": "/os",
+      "sortOrder": 9
+    },
+    {
+      "id": "server-hosting",
+      "titleExact": "Server Hosting",
+      "descriptionExact": "Privacy-focused server hosting, VPS/VDS providers, and domain registrars that respect your privacy and security.",
+      "path": "/server-hosting",
+      "sortOrder": 11
+    },
+    {
+      "id": "cloud",
+      "titleExact": "Cloud",
+      "descriptionExact": "Privacy-focused cloud storage and file sharing services that prioritize security and user privacy.",
+      "path": "/cloud",
+      "sortOrder": 12
+    },
+    {
+      "id": "dns",
+      "titleExact": "DNS",
+      "descriptionExact": "Secure and private DNS providers that protect your browsing privacy and prevent DNS-based tracking.",
+      "path": "/dns",
+      "sortOrder": 13
+    },
+    {
+      "id": "images-metadata-tracking-protection",
+      "titleExact": "Images - Metadata & Tracking Protection",
+      "descriptionExact": "Tools and techniques to remove metadata, prevent tracking, and add noise to images and screenshots.",
+      "path": "/metadata",
+      "sortOrder": 14
+    }
+  ],
+  "items": [
+    {
+      "id": "browsers-ironfox",
+      "titleExact": "IronFox",
+      "descriptionExact": "Privacy-hardened Firefox fork for Android with enhanced tracking protection and no telemetry.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "browsers"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "github",
+          "url": "https://github.com/ironfox-oss/IronFox",
+          "labelExact": "Visit"
+        }
+      ],
+      "githubRepo": "ironfox-oss/IronFox",
+      "sourceConfidence": "medium",
+      "installType": "official-site"
+    },
+    {
+      "id": "browsers-mullvad-browser",
+      "titleExact": "Mullvad Browser",
+      "descriptionExact": "Privacy-focused browser developed with the Tor Project. Strong fingerprinting protection without Tor network.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "browsers"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://mullvad.net/en/browser",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "browsers-tor-browser",
+      "titleExact": "Tor Browser",
+      "descriptionExact": "Maximum anonymity browser routing all traffic through Tor network with built-in fingerprinting protection.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "browsers"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://www.torproject.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "browsers-vanadium",
+      "titleExact": "Vanadium",
+      "descriptionExact": "Security-hardened Chromium variant developed for GrapheneOS with enhanced exploit mitigations.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "browsers"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "github",
+          "url": "https://github.com/GrapheneOS/Vanadium",
+          "labelExact": "Visit"
+        }
+      ],
+      "githubRepo": "GrapheneOS/Vanadium",
+      "sourceConfidence": "medium",
+      "installType": "official-site"
+    },
+    {
+      "id": "cloud-cryptomator",
+      "titleExact": "Cryptomator",
+      "descriptionExact": "Client-side encryption tool for non-secure cloud providers. Adds an extra protection layer on top of Dropbox, Google Drive, OneDrive, Nextcloud, and more. Can be self-hosted.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Cloud Storage Providers",
+      "categoryIds": [
+        "cloud"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://cryptomator.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "cloud-ente",
+      "titleExact": "Ente",
+      "descriptionExact": "Privacy-focused cloud storage with client-side encryption. Encrypts files on your device before sending them to their secure servers. Can be self-hosted.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Cloud Storage Providers",
+      "categoryIds": [
+        "cloud"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://ente.io/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "cloud-proton-drive",
+      "titleExact": "Proton Drive",
+      "descriptionExact": "End-to-end encrypted cloud storage from the makers of Proton Mail. Strong privacy focus with Swiss jurisdiction protection.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Cloud Storage Providers",
+      "categoryIds": [
+        "cloud"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://proton.me/drive",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "disk-encryption-luks",
+      "titleExact": "LUKS",
+      "descriptionExact": "Linux Unified Key Setup - standard for Linux disk encryption.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "disk-encryption"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://gitlab.com/cryptsetup/cryptsetup",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "disk-encryption-veracrypt",
+      "titleExact": "VeraCrypt",
+      "descriptionExact": "Free open-source disk encryption software for Windows, macOS, and Linux.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "disk-encryption"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://www.veracrypt.fr/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "dns-dnscrypt",
+      "titleExact": "DNSCrypt",
+      "descriptionExact": "Protocol and software that encrypts DNS traffic between your device and DNS resolver. Prevents DNS spoofing and snooping.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended DNS Tools & Clients",
+      "categoryIds": [
+        "dns"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://www.dnscrypt.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "dns-mullvad-dns",
+      "titleExact": "Mullvad DNS",
+      "descriptionExact": "Privacy-focused DNS service from Mullvad VPN with DNS-over-HTTPS and DNS-over-TLS support. No logging policy.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended DNS Providers",
+      "categoryIds": [
+        "dns"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://mullvad.net/en/help/dns-over-https-and-dns-over-tls",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "dns-quad9-dns",
+      "titleExact": "Quad9 DNS",
+      "descriptionExact": "Security and privacy-focused DNS service based in Switzerland. Blocks malicious domains and respects user privacy.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended DNS Providers",
+      "categoryIds": [
+        "dns"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://www.quad9.net/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "dns-rethinkdns",
+      "titleExact": "RethinkDNS",
+      "descriptionExact": "Open-source DNS firewall and VPN for Android. Offers customizable blocklists and on-device filtering.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended DNS Tools & Clients",
+      "categoryIds": [
+        "dns"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://rethinkdns.com/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "email-services-duckduckgo-email-protection",
+      "titleExact": "DuckDuckGo Email Protection",
+      "descriptionExact": "Free email forwarding service from DuckDuckGo that removes trackers.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Email Forwarding & Aliases",
+      "categoryIds": [
+        "email-services"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://duckduckgo.com/email/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "email-services-simplelogin",
+      "titleExact": "SimpleLogin",
+      "descriptionExact": "Open source email alias service that protects your real email address.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Email Forwarding & Aliases",
+      "categoryIds": [
+        "email-services"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://simplelogin.io/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "email-services-tutanota",
+      "titleExact": "Tutanota",
+      "descriptionExact": "German-based encrypted email with automatic encryption and open-source clients.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Permanent Mail",
+      "categoryIds": [
+        "email-services"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://tutanota.com/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "images-metadata-tracking-protection-exifcleaner",
+      "titleExact": "ExifCleaner",
+      "descriptionExact": "Free, open-source desktop app for removing EXIF metadata from images and videos. Drag-and-drop interface.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended Metadata Removal Tools",
+      "categoryIds": [
+        "images-metadata-tracking-protection"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "github",
+          "url": "https://github.com/szTheory/exifcleaner",
+          "labelExact": "Visit"
+        }
+      ],
+      "githubRepo": "szTheory/exifcleaner",
+      "sourceConfidence": "medium",
+      "installType": "official-site"
+    },
+    {
+      "id": "messaging-apps-simplex",
+      "titleExact": "SimpleX",
+      "descriptionExact": "Private and secure messaging with no identifiers, quantum-resistant encryption, and complete decentralization.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "messaging-apps"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://simplex.chat/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "operating-systems-gentoo",
+      "titleExact": "Gentoo",
+      "descriptionExact": "Highly customizable minimalistic Linux distribution with source-based compilation for maximum transparency.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Desktop Operating Systems",
+      "categoryIds": [
+        "operating-systems"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://www.gentoo.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "operating-systems-kicksecure",
+      "titleExact": "Kicksecure",
+      "descriptionExact": "Debian-based OS that reduces attack surface via kernel protections and anti-forensics.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Desktop Operating Systems",
+      "categoryIds": [
+        "operating-systems"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://www.kicksecure.com/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "password-managers-2fa-aegis-authenticator",
+      "titleExact": "Aegis Authenticator",
+      "descriptionExact": "Open-source 2FA app for Android with encrypted vault and backup options.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Two-Factor Authentication",
+      "categoryIds": [
+        "password-managers-2fa"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://getaegis.app/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "password-managers-2fa-keepassxc",
+      "titleExact": "KeePassXC",
+      "descriptionExact": "Offline password manager that stores encrypted databases locally.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Password Managers",
+      "categoryIds": [
+        "password-managers-2fa"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://keepassxc.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "password-managers-2fa-raivo-otp",
+      "titleExact": "Raivo OTP",
+      "descriptionExact": "Open-source 2FA authenticator for iOS with encrypted cloud backup.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Two-Factor Authentication",
+      "categoryIds": [
+        "password-managers-2fa"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://raivo-otp.com/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-4get",
+      "titleExact": "4get",
+      "descriptionExact": "Lightweight metasearch engine with no JavaScript, native Tor & I2P support, and zero tracking.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://4get.ca/instances",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-ahmia",
+      "titleExact": "Ahmia",
+      "descriptionExact": "Clearnet search engine that indexes Tor hidden services (.onion sites). Filters illegal content.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://ahmia.fi/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-heexy",
+      "titleExact": "Heexy",
+      "descriptionExact": "Meta search engine with custom index for comprehensive privacy-focused results.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://heexy.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-lantern",
+      "titleExact": "Lantern",
+      "descriptionExact": "Open source search engine for .onion hidden services with user-contributed links.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "http://lantern6vrwheap4iahuktz3jtwvovrzhxgwgzvrvp46brdzzekxibqd.onion/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-mave",
+      "titleExact": "Mave",
+      "descriptionExact": "Ad-free search engine for .onion and i2p hidden services with user-contributed links.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "http://maveeeertxb5myypvakg636m7xtfs2p6bcemvdmucbdps7ixzmikltyd.onion/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-obscura",
+      "titleExact": "Obscura",
+      "descriptionExact": "Search engine for .onion and i2p hidden services with content filtering and link status monitoring.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "http://obscurapoogzxwvrxmmardywkpbdzuhhfotswp7h4fxawou5x6j44gid.onion/links",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-schizoid",
+      "titleExact": "Schizoid",
+      "descriptionExact": "Search engine for .onion and i2p hidden services accessible from clearnet with strict content filtering.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://schizoid.org/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-searxng",
+      "titleExact": "SearXNG",
+      "descriptionExact": "Free metasearch engine that aggregates results from multiple sources without any tracking.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://searx.space/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-torgle",
+      "titleExact": "Torgle",
+      "descriptionExact": "Search engine for .onion hidden services with content filtering.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "http://iy3544gmoeclh5de6gez2256v6pjh4omhpqdh2wpeeppjtvqmjhkfwad.onion/torgle/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "search-engines-vormweb",
+      "titleExact": "VormWeb",
+      "descriptionExact": "Search engine for .onion hidden services with content filtering.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Tor Network Search",
+      "categoryIds": [
+        "search-engines"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "http://volkancfgpi4c7ghph6id2t7vcntenuly66qjt6oedwtjmyj4tkk5oqd.onion/en/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "server-hosting-mynymbox",
+      "titleExact": "MyNymBox",
+      "descriptionExact": "Privacy-focused hosting provider with anonymous VPS and strong security features.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Hosting Providers",
+      "categoryIds": [
+        "server-hosting"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://mynymbox.io/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "server-hosting-mynymbox",
+      "titleExact": "MyNymBox",
+      "descriptionExact": "Privacy-focused domain registrar with anonymous registration and cryptocurrency support.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Domain Registrars",
+      "categoryIds": [
+        "server-hosting"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://mynymbox.io/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "server-hosting-privatealps",
+      "titleExact": "PrivateAlps",
+      "descriptionExact": "Privacy-focused VPS hosting provider based in privacy-friendly jurisdiction.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Hosting Providers",
+      "categoryIds": [
+        "server-hosting"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://privatealps.net/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "server-hosting-vmheaven",
+      "titleExact": "VMHeaven",
+      "descriptionExact": "Privacy-focused VPS/VDS hosting provider with anonymous registration and cryptocurrency payments.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Hosting Providers",
+      "categoryIds": [
+        "server-hosting"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://vmheaven.io/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "server-hosting-xuid",
+      "titleExact": "XUID",
+      "descriptionExact": "Privacy-focused domain registrar accepting cryptocurrency with anonymous registration.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Domain Registrars",
+      "categoryIds": [
+        "server-hosting"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://xuid.ru/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    },
+    {
+      "id": "vpn-services-mullvad-vpn",
+      "titleExact": "Mullvad VPN",
+      "descriptionExact": "Privacy-focused VPN with DAITA, Multihop, and API features. You blend in with thousands of other users.",
+      "badgeExact": "🟢 Recommended",
+      "sectionExact": "Recommended VPNs",
+      "categoryIds": [
+        "vpn-services"
+      ],
+      "upstreamLinks": [
+        {
+          "type": "official",
+          "url": "https://mullvad.net/",
+          "labelExact": "Visit"
+        }
+      ],
+      "sourceConfidence": "low",
+      "installType": "official-site"
+    }
+  ]
+}
